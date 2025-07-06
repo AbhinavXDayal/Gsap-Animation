@@ -342,77 +342,35 @@ body {
         }
     }
 
-    /* Modernize Contact/Footer section */
     #contact {
-      background: radial-gradient(ellipse at center, #232526 0%, #1a1a1a 100%);
-      color: #fff;
-      padding: 64px 0 32px 0;
-      text-align: center;
-    }
-    #contact .content {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 32px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      align-items: center;
-      background: rgba(30,30,30,0.7);
-      border-radius: 24px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-    }
-    #contact h2 {
-      font-family: var(--font-sans, 'Mona Sans', 'Inter', sans-serif);
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      letter-spacing: -1px;
-    }
-    #contact h3 {
-      font-family: var(--font-sans, 'Mona Sans', 'Inter', sans-serif);
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: #ffd700;
-    }
-    #contact p {
-      font-family: var(--font-sans, 'Mona Sans', 'Inter', sans-serif);
-      font-size: 1.1rem;
-      margin: 2px 0;
-      color: #e0e0e0;
-    }
-    .socials-modern {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 12px;
-    }
-    .socials-modern a img {
-      width: 36px;
-      height: 36px;
-      filter: grayscale(40%) brightness(1.2);
-      transition: transform 0.2s, filter 0.2s;
-      border-radius: 50%;
-      background: #222;
-      padding: 6px;
-    }
-    .socials-modern a img:hover {
-      transform: scale(1.15) rotate(-6deg);
-      filter: grayscale(0%) brightness(1.5) drop-shadow(0 2px 8px #ffd70088);
-      background: #ffd70022;
-    }
-    #contact img#f-right-leaf, #contact img#f-left-leaf {
-      opacity: 0.15;
-      position: absolute;
-      width: 180px;
-      z-index: 0;
-    }
-    #contact img#f-right-leaf {
-      top: 0;
-      right: 0;
-    }
-    #contact img#f-left-leaf {
-      top: 0;
-      left: 0;
+        @apply relative md:mt-20 mt-0 px-4 text-center w-full overflow-hidden radial-gradient;
+
+        #f-left-leaf {
+            @apply absolute bottom-0 left-0 pointer-events-none lg:w-fit w-1/3;
+        }
+
+        #f-right-leaf {
+            @apply absolute top-0 right-0 pointer-events-none hidden lg:block;
+        }
+
+        .content {
+            @apply container mx-auto lg:py-14 2xl:py-32 py-16 flex flex-col justify-between gap-10 min-h-dvh;
+
+            h2 {
+                @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;
+            }
+
+            h3 {
+                @apply uppercase xl:text-base 2xl:text-lg text-base mb-2;
+            }
+
+            p {
+                @apply lg:text-2xl 2xl:text-3xl text-sm;
+            }
+        }
+
+        .drink-img {
+            @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
+        }
     }
 }
