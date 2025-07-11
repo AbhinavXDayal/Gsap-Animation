@@ -1,6 +1,6 @@
 # 🍹 Gsap Animation
 
-![Gsap Animation](public/video/gsap-animation-preview.png)
+![Gsap Animation](public/videos/gsap-animation-preview.gif)
 
 A minimalistic, premium cocktail bar landing page built with React and GSAP animations. Features smooth scroll-triggered effects, text splitting animations, and immersive video backgrounds.
 
