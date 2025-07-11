@@ -1,6 +1,6 @@
-# 🍹 Mojito
+# 🍹 Gsap Animation
 
-![Mojito preview](public/readme/hero.png)
+![Gsap Animation](public/videos/gsap-animation-preview.png)
 
 A minimalistic, premium cocktail bar landing page built with React and GSAP animations. Features smooth scroll-triggered effects, text splitting animations, and immersive video backgrounds.
 
