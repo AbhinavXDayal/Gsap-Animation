@@ -22,8 +22,6 @@ npm install
 npm run dev
 ```
 
-The app will be available at [http://localhost:5173](http://localhost:5173).
-
 ## 🛠️ Tech Stack
 - React 19 + GSAP
 - Tailwind CSS 4
